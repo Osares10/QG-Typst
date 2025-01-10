@@ -11,6 +11,9 @@
   [ What is #a - #b? ]
 }
 
+#let questionPoints = 25
+#let answerSize = 3
+
 #let answer(seed) = {
   let rng = gen-rng(seed)
   let a = 0
