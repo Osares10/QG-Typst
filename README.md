@@ -12,32 +12,36 @@ Quiz Generator in Typst. Create multiple quiz versions from the same template.
 Modify the `questionarie` object with your own data.
 
 ```typst
-show: questionarie.with(
-    teacher: "Oswaldo Arias Estrada",
-    title: "1st Partial Exam",
-    subject: "Vectorial Calculus",
-    school: "Instituto Politénico Nacional",
-    faculty: "Unidad Profesional Interdisciplinaria \n de Ingeniería Campus Guanajuato",
-    academy: "Mathematics",
-    class: "1AV1",
-    date: "06/01/25",
-    paper: "us-letter",
-    textFont: "Atkinson Hyperlegible",
-    codeFont: "Roboto Mono",
-    schoolLogo: "images/IPN.png",
-    schoolLogoWidth: 30%,
-    facultyLogo: "images/UPIIG.png",
-    facultyLogoWidth: 40%,
-    instructions: [
-      - Answer the following questions.
-
-      - You have 1 hour to complete the exam.
-
-      - Write your answers on the exam paper.
-    ],
-
+#while i < students {
     ...
-  )
+    show: questionarie.with(
+        teacher: "Oswaldo Arias Estrada",
+        title: "1st Partial Exam",
+        subject: "Vectorial Calculus",
+        school: "Instituto Politénico Nacional",
+        faculty: "Unidad Profesional Interdisciplinaria \n de Ingeniería Campus Guanajuato",
+        academy: "Mathematics",
+        class: "1AV1",
+        date: "06/01/25",
+        paper: "us-letter",
+        textFont: "Atkinson Hyperlegible",
+        codeFont: "Roboto Mono",
+        schoolLogo: "images/IPN.png",
+        schoolLogoWidth: 30%,
+        facultyLogo: "images/UPIIG.png",
+        facultyLogoWidth: 40%,
+        instructions: [
+        - Answer the following questions.
+
+        - You have 1 hour to complete the exam.
+
+        - Write your answers on the exam paper.
+        ],
+
+        ...
+    )
+    ...
+}
 ```
 
 ## Versions
