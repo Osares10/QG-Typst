@@ -20,18 +20,14 @@
 
 #let students = 12
 #let examVersions = 12
-#let answers = false
+#let answers = true
 
 #let questions = (
-  "questions/q1.typ",
-  "questions/q2.typ",
-  "questions/q3.typ",
-  "questions/q4.typ",
-  "questions/q1.typ",
-  "questions/q2.typ",
-  "questions/q3.typ",
-  "questions/q4.typ",
-  "questions/q1.typ",
+  "questions/hypotenuse of a right triangle.typ",
+  "questions/balls.typ",
+  "questions/derivative.typ",
+  "questions/cars speeds.typ",
+  "questions/polygons.typ"
 )
 
 #let k = 0
@@ -95,7 +91,7 @@
 
     import questions.at(j): question, questionPoints, answerSize, answer
     align(center)[#line(length: 100%, stroke: (paint: gray, thickness: 1pt, dash: "dashed"))]
-    [*Question \#*] + [*#str(j + 1)*] + [*. *] + [(#questionPoints points).]
+    [*Question \#*] + [*#str(j + 1)*] + [*. *] + [(#questionPoints points). ]
     question(examVersion)
     v(1em)
     if answers {
