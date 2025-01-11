@@ -19,7 +19,7 @@
 #let seed = 129302183
 
 #let students = 12
-#let examVersions = 12
+#let examVersions = 4
 #let answers = true
 
 #let questions = (
